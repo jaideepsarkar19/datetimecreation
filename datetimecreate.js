@@ -18,7 +18,7 @@ const seconds = dateObject.getSeconds();
 //Q1) Write API endpoint which will create a text file in a particular folder.
 app.get('/', function (req, res) {
 //  res.send(   fs.writeFile(`./${text}.txt`, text, (err)=> {console.log( `Completed file${text}`)}))
-    res.send(fs.writeFile(`./${date}-${month}-${year}-${hours}hours.txt`,text,(err)=>
+    res.send(fs.writeFile(`./text/${date}-${month}-${year}-${hours}hours.txt`,text,(err)=>
     {
         console.log(`completed date-time-creation file-${text} `)
     }))
